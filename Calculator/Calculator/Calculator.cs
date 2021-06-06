@@ -1,26 +1,69 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.ComponentModel.Composition;
 
 namespace Calculator
 {
-    public partial class Calculator : Form
+    public interface ICalculator
     {
-        public Calculator()
+        String Calculate(String input);
+    }
+
+    public interface IOperation
+    {
+        double Operate(double left, double right);
+    }
+
+    public interface IOperationData
+    {
+        Char Symbol { get; }
+    }
+
+    [Export(typeof(ICalculator))]
+    class Calculator : ICalculator
+    {
+        [ImportMany]
+        IEnumerable<Lazy<IOperation, IOperationData>> operations;
+
+        private int FindFirstNonDigit(string s)
         {
-            InitializeComponent();
-            this.Text = "Calculator";
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (!Char.IsDigit(s[i])) return i;
+            }
+            return -1;
         }
 
-        private void Calculator_Load(object sender, EventArgs e)
+        public String Calculate(string input)
         {
+            double left;
+            double right;
+            char operation;
+            // Finds the operator.
+            int fn = FindFirstNonDigit(input);
+            if (fn < 0) return "Could not parse command.";
 
+            try
+            {
+                // Separate out the operands.
+                left = double.Parse(input.Substring(0, fn));
+                right = double.Parse(input.Substring(fn + 1));
+            }
+            catch
+            {
+                return "Could not parse command.";
+            }
+
+            operation = input[fn];
+
+            foreach (Lazy<IOperation, IOperationData> i in operations)
+            {
+                if (i.Metadata.Symbol.Equals(operation)) return i.Value.Operate(left, right).ToString();
+            }
+            return "Operation Not Found!";
         }
     }
 }

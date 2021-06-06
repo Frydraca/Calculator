@@ -1,0 +1,7 @@
+E:\Lajos\Work\Calculator\Calculator\Calculator\Calculator\Operations\Addition.dll
+E:\Lajos\Work\Calculator\Calculator\Calculator\Calculator\Operations\Addition.pdb
+E:\Lajos\Work\Calculator\Calculator\Calculator\Addition\obj\Debug\Addition.csproj.AssemblyReference.cache
+E:\Lajos\Work\Calculator\Calculator\Calculator\Addition\obj\Debug\Addition.csproj.CoreCompileInputs.cache
+E:\Lajos\Work\Calculator\Calculator\Calculator\Addition\obj\Debug\Addition.csproj.CopyComplete
+E:\Lajos\Work\Calculator\Calculator\Calculator\Addition\obj\Debug\Addition.dll
+E:\Lajos\Work\Calculator\Calculator\Calculator\Addition\obj\Debug\Addition.pdb
