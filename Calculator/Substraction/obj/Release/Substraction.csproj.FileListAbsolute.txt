@@ -1,0 +1,12 @@
+E:\Lajos\Work\Calculator\Calculator\Calculator\Substraction\bin\Release\Substraction.dll
+E:\Lajos\Work\Calculator\Calculator\Calculator\Substraction\bin\Release\Substraction.pdb
+E:\Lajos\Work\Calculator\Calculator\Calculator\Substraction\bin\Release\Calculator.exe
+E:\Lajos\Work\Calculator\Calculator\Calculator\Substraction\bin\Release\Calculator.pdb
+E:\Lajos\Work\Calculator\Calculator\Calculator\Substraction\bin\Release\Calculator.exe.config
+E:\Lajos\Work\Calculator\Calculator\Calculator\Substraction\obj\Release\Substraction.csproj.AssemblyReference.cache
+E:\Lajos\Work\Calculator\Calculator\Calculator\Substraction\obj\Release\Substraction.csproj.CoreCompileInputs.cache
+E:\Lajos\Work\Calculator\Calculator\Calculator\Substraction\obj\Release\Substraction.csproj.CopyComplete
+E:\Lajos\Work\Calculator\Calculator\Calculator\Substraction\obj\Release\Substraction.dll
+E:\Lajos\Work\Calculator\Calculator\Calculator\Substraction\obj\Release\Substraction.pdb
+E:\Lajos\Work\Calculator\Calculator\Calculator\Calculator\bin\Release\Operations\Substraction.dll
+E:\Lajos\Work\Calculator\Calculator\Calculator\Calculator\bin\Release\Operations\Substraction.pdb

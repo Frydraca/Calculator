@@ -1,0 +1,14 @@
+E:\Lajos\Work\Calculator\Calculator\Calculator\Addition\bin\Release\Addition.dll
+E:\Lajos\Work\Calculator\Calculator\Calculator\Addition\bin\Release\Addition.pdb
+E:\Lajos\Work\Calculator\Calculator\Calculator\Addition\bin\Release\Calculator.exe
+E:\Lajos\Work\Calculator\Calculator\Calculator\Addition\bin\Release\Calculator.pdb
+E:\Lajos\Work\Calculator\Calculator\Calculator\Addition\bin\Release\Calculator.exe.config
+E:\Lajos\Work\Calculator\Calculator\Calculator\Addition\obj\Release\Addition.csproj.AssemblyReference.cache
+E:\Lajos\Work\Calculator\Calculator\Calculator\Addition\obj\Release\Addition.csproj.CoreCompileInputs.cache
+E:\Lajos\Work\Calculator\Calculator\Calculator\Addition\obj\Release\Addition.csproj.CopyComplete
+E:\Lajos\Work\Calculator\Calculator\Calculator\Addition\obj\Release\Addition.dll
+E:\Lajos\Work\Calculator\Calculator\Calculator\Addition\obj\Release\Addition.pdb
+E:\Lajos\Work\Calculator\Calculator\Calculator\Calculator\Operations\Addition.dll
+E:\Lajos\Work\Calculator\Calculator\Calculator\Calculator\Operations\Addition.pdb
+E:\Lajos\Work\Calculator\Calculator\Calculator\Calculator\bin\Release\Operations\Addition.dll
+E:\Lajos\Work\Calculator\Calculator\Calculator\Calculator\bin\Release\Operations\Addition.pdb

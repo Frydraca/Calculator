@@ -30,7 +30,7 @@ namespace Calculator
             var catalog = new AggregateCatalog();
             // Adds all the parts found in the same assembly as the Program class.
             catalog.Catalogs.Add(new AssemblyCatalog(typeof(Program).Assembly));
-            catalog.Catalogs.Add(new DirectoryCatalog("..\\..\\Operations"));
+            catalog.Catalogs.Add(new DirectoryCatalog(".\\Operations"));
 
             // Create the CompositionContainer with the parts in the catalog.
             _container = new CompositionContainer(catalog);
