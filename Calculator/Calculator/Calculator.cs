@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.Composition;
+using System.Collections;
 
 namespace Calculator
 {
@@ -28,42 +29,71 @@ namespace Calculator
         [ImportMany]
         IEnumerable<Lazy<IOperation, IOperationData>> operations;
 
-        private int FindFirstNonDigit(string s)
+        private List<int> FindOperators(string input)
         {
-            for (int i = 0; i < s.Length; i++)
+            List<int> operatorIndicies = new List<int>();
+           
+            for (int i = 0; i < input.Length; i++)
             {
-                if (!Char.IsDigit(s[i])) return i;
+                if (!Char.IsDigit(input[i]) && input[i] != '.') operatorIndicies.Add(i);
             }
-            return -1;
+            return operatorIndicies;
         }
 
         public String Calculate(string input)
         {
-            double left;
-            double right;
-            char operation;
+            double currentResult = 0;
             // Finds the operator.
-            int fn = FindFirstNonDigit(input);
-            if (fn < 0) return "Could not parse command.";
+            List<int> operators = FindOperators(input);
+            if (operators.Count < 1) return "No operator was found.";
 
-            try
+            foreach(int operatorIndex in operators)
             {
-                // Separate out the operands.
-                left = double.Parse(input.Substring(0, fn));
-                right = double.Parse(input.Substring(fn + 1));
-            }
-            catch
-            {
-                return "Could not parse command.";
+                bool operationFound = false;
+                double left;
+                double right;
+                char operation = input[operatorIndex];
+                int nextOperatorIndex = operators.IndexOf(operatorIndex) + 1;
+                try
+                {
+                    // Separate out the operands.
+                    if(operators.IndexOf(operatorIndex) == 0)
+                    {
+                        if (operatorIndex == 0 && (operation == '-' || operation == '+')) left = 0;
+                        else left = double.Parse(input.Substring(0, operatorIndex));
+                    }
+                    else
+                    {
+                        left = currentResult;
+                    }
+                    if(nextOperatorIndex < operators.Count)
+                    {
+                        right = double.Parse(input.Substring(operatorIndex + 1, operators[nextOperatorIndex] - (operatorIndex + 1)));
+                    }
+                    else
+                    {
+                        right = double.Parse(input.Substring(operatorIndex + 1));
+                    }
+                }
+                catch
+                {
+                    return "Could not parse command.";
+                }
+
+
+                foreach (Lazy<IOperation, IOperationData> operationData in operations)
+                {
+                    if (operationData.Metadata.Symbol.Equals(operation))
+                    {
+                        currentResult = operationData.Value.Operate(left, right);
+                        operationFound = true;
+                        break;
+                    }
+                }
+                if (!operationFound) return "Operation Not Found!";
             }
 
-            operation = input[fn];
-
-            foreach (Lazy<IOperation, IOperationData> i in operations)
-            {
-                if (i.Metadata.Symbol.Equals(operation)) return i.Value.Operate(left, right).ToString();
-            }
-            return "Operation Not Found!";
+            return currentResult.ToString();
         }
     }
 }
