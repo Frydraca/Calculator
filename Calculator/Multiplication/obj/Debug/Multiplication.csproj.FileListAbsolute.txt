@@ -1,5 +1,0 @@
-E:\Lajos\Work\Calculator\Calculator\Calculator\Multiplication\bin\Debug\Multiplication.dll
-E:\Lajos\Work\Calculator\Calculator\Calculator\Multiplication\bin\Debug\Multiplication.pdb
-E:\Lajos\Work\Calculator\Calculator\Calculator\Multiplication\bin\Debug\Calculator.exe
-E:\Lajos\Work\Calculator\Calculator\Calculator\Multiplication\bin\Debug\Calculator.pdb
-E:\Lajos\Work\Calculator\Calculator\Calculator\Multiplication\bin\Debug\Calculator.exe.config
