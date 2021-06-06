@@ -1,1 +1,1 @@
-# Calculator
+A Calculator.exe fájl futtatásával lehet elindítani a programot. Szükséges hogy legyen mellette egy Operations mappa. Az Operations mappában kell elhelyezni az egyes műveleteket. A debug módban a build készít egy Calculator.exe-t a Calculator/Calculator mappában (A gittől viszonyítva), illetve az ott lévő Operations mappába elkészíti a művelet dll-eket. Release módban a build a Calculator/Calculator/bin/Release mappába hoz létre egy Calculator.exe-t és az itt található Operations mappába hozza létre a művelet dll-eket.
