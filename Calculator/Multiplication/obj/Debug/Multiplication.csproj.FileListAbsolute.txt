@@ -3,10 +3,3 @@ E:\Lajos\Work\Calculator\Calculator\Calculator\Multiplication\bin\Debug\Multipli
 E:\Lajos\Work\Calculator\Calculator\Calculator\Multiplication\bin\Debug\Calculator.exe
 E:\Lajos\Work\Calculator\Calculator\Calculator\Multiplication\bin\Debug\Calculator.pdb
 E:\Lajos\Work\Calculator\Calculator\Calculator\Multiplication\bin\Debug\Calculator.exe.config
-E:\Lajos\Work\Calculator\Calculator\Calculator\Calculator\Operations\Multiplication.dll
-E:\Lajos\Work\Calculator\Calculator\Calculator\Calculator\Operations\Multiplication.pdb
-E:\Lajos\Work\Calculator\Calculator\Calculator\Multiplication\obj\Debug\Multiplication.csproj.AssemblyReference.cache
-E:\Lajos\Work\Calculator\Calculator\Calculator\Multiplication\obj\Debug\Multiplication.csproj.CoreCompileInputs.cache
-E:\Lajos\Work\Calculator\Calculator\Calculator\Multiplication\obj\Debug\Multiplication.csproj.CopyComplete
-E:\Lajos\Work\Calculator\Calculator\Calculator\Multiplication\obj\Debug\Multiplication.dll
-E:\Lajos\Work\Calculator\Calculator\Calculator\Multiplication\obj\Debug\Multiplication.pdb

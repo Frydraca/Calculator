@@ -1,7 +1,0 @@
-E:\Lajos\Work\Calculator\Calculator\Calculator\Calculator\Operations\Substraction.dll
-E:\Lajos\Work\Calculator\Calculator\Calculator\Calculator\Operations\Substraction.pdb
-E:\Lajos\Work\Calculator\Calculator\Calculator\Substraction\obj\Debug\Substraction.csproj.AssemblyReference.cache
-E:\Lajos\Work\Calculator\Calculator\Calculator\Substraction\obj\Debug\Substraction.csproj.CoreCompileInputs.cache
-E:\Lajos\Work\Calculator\Calculator\Calculator\Substraction\obj\Debug\Substraction.csproj.CopyComplete
-E:\Lajos\Work\Calculator\Calculator\Calculator\Substraction\obj\Debug\Substraction.dll
-E:\Lajos\Work\Calculator\Calculator\Calculator\Substraction\obj\Debug\Substraction.pdb

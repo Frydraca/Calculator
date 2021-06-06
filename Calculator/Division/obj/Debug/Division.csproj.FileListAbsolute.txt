@@ -1,7 +1,0 @@
-E:\Lajos\Work\Calculator\Calculator\Calculator\Calculator\Operations\Division.dll
-E:\Lajos\Work\Calculator\Calculator\Calculator\Calculator\Operations\Division.pdb
-E:\Lajos\Work\Calculator\Calculator\Calculator\Division\obj\Debug\Division.csproj.AssemblyReference.cache
-E:\Lajos\Work\Calculator\Calculator\Calculator\Division\obj\Debug\Division.csproj.CoreCompileInputs.cache
-E:\Lajos\Work\Calculator\Calculator\Calculator\Division\obj\Debug\Division.csproj.CopyComplete
-E:\Lajos\Work\Calculator\Calculator\Calculator\Division\obj\Debug\Division.dll
-E:\Lajos\Work\Calculator\Calculator\Calculator\Division\obj\Debug\Division.pdb
